@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />   
+    <link rel="stylesheet" href="../assets/css/style.css" />   
+    <script src="https://kit.fontawesome.com/a83dba7890.js"></script>
     <title>Personal Blog</title>
   </head>
   <body>
+    
     <header>
       <a href="../index.html">
-        <img class="logo" src="../images/logo2.png" alt="blog logo" />
+        <img class="logo" src="../assets/images/logo2.png" alt="blog logo" />
       </a>
 
       <nav>
@@ -24,10 +26,10 @@
     <main class="container">
       <div class="main">
         <article class="article">
-          <h1>The Great Pyramids</h1>
+          <h1 class="title">The Great Pyramids</h1>
           <date class="post-date">Last Updated: August 2, 2018</date>
           <div class="article-image">
-            <img src="../images/pyramids.jpg" class="post-page-image" />
+            <img src="../assets/images/pyramids.jpg" class="post-page-image" />
             <figcaption>
               <em>Lorem ipsum dolor sit amet consectetur adipisicing elit.</em>
             </figcaption>
@@ -49,18 +51,43 @@
       
   </div>     
       </div>
-    </main>
+      <div class="aside">
+        <div class="author-card">
+          <h2 class="title">About me</h2>
+          <div class="author-image">
+              <img src="../assets/images/noha.jpg" alt="Noha Hakim"/>
+          </div>
+        <!-- <div class="author-info-text"> -->
 
+          <h2>Noha Hakim</h2>
+         
+          <p class="author-desc">Front End Developer who passionately codes and builds responsive websites</p>
+          
+        <!-- </div> -->
+        <div class="aside-social">
+          <p class="social-text">Contact me via:</p>
+          <div class="social-icons">
+            <a href="#"  class="social_link"><i
+                class="fab fa-2x fa-instagram social-icon"></i></a>
+            <a href="#" class="social_link"> <i
+                class="fab fa-2x fa-github social-icon"></i></a>
+            <a href="#" class="social_link"><i
+                class="fab fa-2x fa-twitter social-icon"></i></a>
+          </div>
+      
+      </div>
+    </main>
+    
     <footer>
       <p>Travel Blog - ©Copyright 2022</p>
       <div class="social-media">
         <a href="/"
-          ><img src="../images/Icons/linkedin.png" alt="Linkedin"
+          ><img src="../assets/images/Icons/linkedin.png" alt="Linkedin"
         /></a>
         <a href="/"
-          ><img src="../images/Icons/facebook.png" alt="Facebook"
+          ><img src="../assets/images/Icons/facebook.png" alt="Facebook"
         /></a>
-        <a href="/"><img src="../images/Icons/twitter.png" alt="Twitter" /></a>
+        <a href="/"><img src="../assets/images/Icons/twitter.png" alt="Twitter" /></a>
       </div>
     </footer>
   </body>

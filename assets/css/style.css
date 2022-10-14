@@ -1,57 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
-@import "css/post.css";
-@import "css/about.css";
+@import "post.css";
+@import "header.css";
+@import "footer.css";
+@import "blog.css";
 
 body {
   margin: auto;
   font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas: "header" "main" "footer";
 }
 
-header {
-  font-size: 18px;
-  background-color: #fff;
-  color: #555;
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  height: 70px;
-  padding-bottom: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  width: 125px;
-  height: 64px;
-  padding: 10px;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.nav-item a:hover {
-  color: black;
-  background-color: #f1f3f4;
-  padding: 0.8rem;
-  border-radius: 6px;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: rgb(54, 53, 53);
-  padding: 10px 15px;
-  font-weight: bold;
-}
-
-.nav-item {
-  padding: 0px 20px;
+.main {
+  grid-area: main;
 }
 .banner {
   height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("images/nile.jpg");
+    url("../images/nile.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -99,7 +66,7 @@ post img {
   margin: auto;
 }
 
-h3 {
+.title {
   color: rgb(13, 87, 137);
 }
 
@@ -126,18 +93,13 @@ p {
   color: black;
 }
 footer {
+  grid-area: footer;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(229, 229, 229);
+  border-color: rgb(231, 223, 223);
   text-align: center;
   padding: 2em;
   margin: 0;
-}
-
-.social-media img {
-  width: 30px;
-  padding: 24px 5px;
-  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {

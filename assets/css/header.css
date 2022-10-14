@@ -1,0 +1,40 @@
+header {
+  grid-area: header;
+  font-size: 18px;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header .logo {
+  width: 125px;
+  height: 64px;
+  padding: 10px;
+}
+
+nav {
+  display: grid;
+  justify-content: end;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item a:hover {
+  color: black;
+  background-color: #f1f3f4;
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(54, 53, 53);
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0px 20px;
+}

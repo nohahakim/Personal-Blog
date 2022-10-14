@@ -1,0 +1,74 @@
+.container {
+  padding: 1.2em;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main" "aside";
+  grid-gap: 1.5em;
+  border-radius: 1em;
+  margin: 1.5em 0em;
+  background-color: aliceblue;
+}
+
+main .main {
+  grid-area: main;
+  background-color: #fff;
+  padding: 1.2em;
+  border-radius: 1em;
+}
+
+main .aside {
+  grid-area: aside;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "main aside";
+  }
+}
+.article {
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.post-page-image {
+  max-width: 100%;
+  margin: 1.5em auto;
+}
+
+.post-page-content {
+  text-align: justify;
+  margin: 1.6em 1em;
+  text-indent: 2em;
+}
+
+.post-date {
+  color: #adadad;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.author-image img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.social-text {
+  border-top: solid rgba(41, 41, 41, 0.5);
+  padding-top: 1rem;
+}
+
+.social-link {
+  color: #292929;
+}
+
+.social-icon {
+  margin: 0.5em 0.2em;
+}
